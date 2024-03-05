@@ -43,6 +43,7 @@ class PublishConfig:
         for value in values.split(","):
             value = value.strip().lower()
             value = value.replace(" ", "_")
+            value = value.replace('-', '_')
             tmp.append(value)
         return tmp
 
