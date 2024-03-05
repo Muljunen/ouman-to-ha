@@ -1,11 +1,13 @@
-# Ouman EH203 data collector for Home assistant
+# Ouman data collector for Home assistant
 
-Uses taloLogger to interface with Ouman EH203 over serial cable.
+Uses taloLogger to interface with Ouman device (example EH203) over serial cable.
 Send result to MQTT to store and visualize data in Home assistant.
+
+This is tested only with EH203, but it should work with other ouman devices that taloLogger is supporting
 
 ### What's needed
 
- * Ouman EH203 connected via serial cable to (a device such as Raspberry Pi)
+ * Ouman device (example EH203) connected via serial cable to (a device such as Raspberry Pi)
     * Check connection instructions from http://ouman.fi/documentbank/EH-203__manual__fi.pdf -> page 42.
  * Home assistant with mqtt server installed
 
@@ -14,7 +16,6 @@ Send result to MQTT to store and visualize data in Home assistant.
  * taloLogger https://olammi.iki.fi/sw/taloLogger/ (tested with v1.7k)
  * Python 2.7.x
  * Install requirements for python2
-
 
 ## Download and extract taloLogger
 
