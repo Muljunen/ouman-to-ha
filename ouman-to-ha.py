@@ -16,14 +16,6 @@ sys.path = [os.path.abspath('taloLogger')] + sys.path
 from modules.core import configuration, log
 from modules.datasources.ouman import oumanSerial
 
-topic_base = "home/eh203/"
-values_to_publish = [
-    "ulkolampotila",
-    "l1_menovesi",
-    "l1_paluuvesi",
-    "l2_menovesi"
-]
-
 g_logger = None
 g_publish_config = None
 
