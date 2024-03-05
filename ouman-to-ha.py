@@ -61,7 +61,7 @@ class PublishConfig:
 
 def parse_ini_config(logger):
     config = ConfigParser.ConfigParser()
-    config.read('ouman-collector.ini')
+    config.read('ouman-to-ha.ini')
 
     error_in_ini = False
 
