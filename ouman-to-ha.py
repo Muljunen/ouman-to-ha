@@ -27,7 +27,7 @@ class MqttConfig:
         self.host = host
         self.port = port
 
-    def __repr__(self):
+    def __str__(self):
         return "username={}, host={}, port={}".format(self.username,
                                                       self.host,
                                                       self.port)
@@ -46,7 +46,7 @@ class PublishConfig:
             tmp.append(value)
         return tmp
 
-    def __repr__(self):
+    def __str__(self):
         return "topic={}, values={}".format(self.topic,
                                             self.values)
 
@@ -98,6 +98,9 @@ def parse_ini_config(logger):
     )
     global g_publish_config
     g_publish_config = publish_config
+
+    logger.debug("MQTT config from ini: {}".format(mqtt_config))
+    logger.debug("Publish config from ini: {}".format(publish_config))
 
     return mqtt_config
 
