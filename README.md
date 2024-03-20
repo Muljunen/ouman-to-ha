@@ -16,6 +16,7 @@ This is tested only with EH203, but it should work with other ouman devices that
  * taloLogger https://olammi.iki.fi/sw/taloLogger/ (tested with v1.7k)
  * Python 2.7.x
  * Install requirements for python2
+ * Home assistant with MQTT (or separate MQTT) server
 
 ## Download and extract taloLogger
 
