@@ -62,7 +62,7 @@ Crontab example, replace USERNAME with your username/path.
 I am not fully sure, is it possible to setup this in UI, so this only show how to do it in yaml files.
 
 1. Add row `mqtt: !include mqtt_sensors.yaml` to `configuration.yaml`
-2. Add this configuration inside of `configuration.yaml`, of course adapt based on your needs!
+2. Add this configuration inside of `mqtt_sensors.yaml`, of course adapt based on your needs!
    
    `state_topic` values are generated from given topic and values given.
    
