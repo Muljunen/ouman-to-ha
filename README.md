@@ -56,7 +56,7 @@ optional arguments:
 Crontab example, replace USERNAME with your username/path.
 
 ```
-* * * * * cd /home/USERNAME/ouman-to-ha/taloLogger/ ; sudo python2 ouman-to-ha.py /dev/ttyUSB0 EH203
+* * * * * cd /home/USERNAME/ouman-to-ha/ ; sudo python2 ouman-to-ha.py --serial /dev/ttyUSB0 --ouman EH203
 ```
 
 # Configuration to Home assistant
